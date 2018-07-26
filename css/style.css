@@ -1,0 +1,252 @@
+body,html{
+    height:100%;
+    width:100%;
+    display:block;
+    font-size:14px;
+    font-family:'Source Sans Pro';
+    padding-top:43px
+}
+.bg-cover{
+    background-size:cover;
+    background-position:70% center;
+    /* background-attachment: fixed; */
+    background-repeat:no-repeat
+}
+.bg-cover-b{
+    background-size:cover;
+    background-position:center bottom;
+    /* background-attachment: fixed; */
+    background-repeat:no-repeat
+}
+.bg-parallax{
+    background-size:cover;
+    background-position:center bottom;
+    background-attachment: fixed;
+    background-repeat:no-repeat
+}
+.img-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Sunflower', sans-serif;
+}
+.mh-80{
+    min-height: 80vh;
+}
+.directorio-font{
+    font-family: 'Raleway', sans-serif !important;
+}
+nav{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.432);
+    border-bottom: solid 3px rgb(0, 84, 153);
+}
+nav img{
+    height:60px;
+    display: block
+}
+nav a{
+    color:gray;
+}
+nav a:hover{
+    color:rgba(47, 85, 151,0.8);
+}
+.bordes:after{
+    content: "";
+    display: block;
+    width: 100%;    
+    border-bottom: 1px solid #2f5597;
+}
+.bordes-title-white:after{
+    content: "";
+    display:block;
+    width: 30%;
+    margin: 0 auto;    
+    padding-top:5px;
+    border-bottom: 1px solid #fff;
+}
+.bordes-title-cimac:after{
+    content: "";
+    display:block;
+    width: 30%;
+    margin: 0 auto;    
+    padding-top:5px;
+    border-bottom: 1px solid #2f5597;
+}
+.bg-cimac{
+    background-color: #2f5597
+}
+.capa-gris{
+    background-color:rgba(108, 117, 125,.90);
+    width:100%;
+    height:100%
+}
+.capa-blanca{
+    background-color:rgba(255, 255, 255,.55);
+    width:100%;
+    height:100%
+}
+.capa-negra{
+    background-color: rgba(0, 0, 0, 0.5);
+    width:100%;
+    height:100%
+}
+.capa-cimac{
+    background-color:rgba(47, 85, 151,.90);
+    width:100%;
+    height:100%
+}
+.t-shadow-2-black{
+    text-shadow:2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.text-white-smoke{
+    color:whitesmoke;
+}
+.text-cimac{
+    color:#005499;
+}
+.bg-cimac{
+    background-color: #005499!important;
+    color:#fff;
+}
+.t-shadow-2-white{
+    text-shadow:2px 2px 2px white;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-director{
+    max-height:400px;max-width:100%;
+}
+.img-maestro{
+    max-height:300px;max-width:90%;
+}
+
+.btn-dark {
+    background-color: rgba(0, 0, 0, .7);
+    border: none;
+    color: white!important;
+}
+.h-img {
+    height: 200px;
+}
+.t-underline-none:hover{
+    text-decoration: none;
+}
+.t-under-line-white {
+    text-decoration: underline white;
+}
+.h-valores {
+    height: 2rem;
+}
+.h-icon-footer {
+    height: 1.2rem;
+}
+.box-shadow {
+    box-shadow:  0px 2px 5px black;
+}
+
+/*- flickyti -*/
+.main-carousel{
+    margin-bottom:50px;
+        background-color: #222
+   }
+.carousel-cell {
+    width: 100%; /* full width */
+    height: 65vh; 
+    background: #222;
+    /* center images in cells with flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flickity-enabled.is-fullscreen{
+    z-index:9999;
+}
+.flickity-enabled.is-fullscreen .carousel-cell{
+    height: 100%;
+}
+.carousel-cell img {
+    display: block;
+    max-height: 100%;
+}
+.flickity-button{
+    margin-top:30px
+}
+.carousel-nav .carousel-cell{
+    height: 100px;
+    width:100px;
+    margin-right:.5rem;
+}
+.carousel-nav{
+    width: 100%;
+    padding:.5rem;
+    margin: 0 auto;
+}
+
+/*-- minimo 576px ancho --*/
+@media (min-width: 576px) {
+    body{
+        padding-top:20px;
+    }
+    .img-director{
+        max-width:80%;
+    }
+    .img-maestro{
+        max-width:70%;
+    }
+    
+}
+
+/*-- minimo 768px ancho --*/
+@media (min-width: 768px) {
+    body, html{
+        font-size: 16px;
+        padding-top: 44px
+    }
+    .img-director{
+        max-width:100%;
+    }
+    .img-maestro{
+        max-width:100%;
+    }
+    .galery{
+        column-count: 3;
+    }
+
+    /*- flickyti -*/
+    .carousel-nav{
+        width:75%;
+    }
+}
+/*-- minimo 992px ancho --*/
+@media (min-width:992px) {
+    .galery{
+        column-count: 4;
+    }
+
+    /*- flickyti -*/
+   .carousel-nav{
+        width:50%;
+    }
+
+}
+
+/*-- minimo 1200px ancho --*/
+@media (min-width:1200px) {
+    body, html {font-size: 18px;}
+    .galery{
+        column-count: 5;
+    }
+
+}
+
+
+/*-- diseño --*/
+.print {
+    border: 1px dashed violet;
+}
