@@ -2,9 +2,9 @@ body,html{
     height:100%;
     width:100%;
     display:block;
-    font-size:14px;
+    /* font-size:14px; */
     font-family:'Source Sans Pro';
-    padding-top:43px
+    padding-top:35px
 }
 .bg-cover{
     background-size:cover;
@@ -31,7 +31,8 @@ body,html{
     object-position: center;
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Sunflower', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700
 }
 .mh-80{
     min-height: 80vh;
@@ -44,7 +45,7 @@ nav{
     border-bottom: solid 3px rgb(0, 84, 153);
 }
 nav img{
-    height:60px;
+    /* height:60px; */
     display: block
 }
 nav a{
@@ -125,7 +126,9 @@ nav a:hover{
 .img-maestro{
     max-height:300px;max-width:90%;
 }
-
+.img-block{
+    height:280px;
+}
 .btn-dark {
     background-color: rgba(0, 0, 0, .7);
     border: none;
@@ -173,6 +176,7 @@ nav a:hover{
 .carousel-cell img {
     display: block;
     max-height: 100%;
+    max-width: 100%;
 }
 .flickity-button{
     margin-top:30px
@@ -190,9 +194,6 @@ nav a:hover{
 
 /*-- minimo 576px ancho --*/
 @media (min-width: 576px) {
-    body{
-        padding-top:20px;
-    }
     .img-director{
         max-width:80%;
     }
@@ -205,8 +206,8 @@ nav a:hover{
 /*-- minimo 768px ancho --*/
 @media (min-width: 768px) {
     body, html{
-        font-size: 16px;
-        padding-top: 44px
+        /* font-size: 16px; */
+        padding-top: 33px
     }
     .img-director{
         max-width:100%;
@@ -221,6 +222,9 @@ nav a:hover{
     /*- flickyti -*/
     .carousel-nav{
         width:75%;
+    }
+    .img-block{
+        height:auto;
     }
 }
 /*-- minimo 992px ancho --*/
@@ -238,7 +242,7 @@ nav a:hover{
 
 /*-- minimo 1200px ancho --*/
 @media (min-width:1200px) {
-    body, html {font-size: 18px;}
+    /* body, html {font-size: 18px;} */
     .galery{
         column-count: 5;
     }
